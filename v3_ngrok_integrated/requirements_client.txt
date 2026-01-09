@@ -1,0 +1,7 @@
+websocket-client
+pyaudio
+gtts
+requests
+beautifulsoup4
+openpibo
+python-dotenv

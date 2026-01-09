@@ -1,0 +1,22 @@
+# WhisperLiveKit 서버 요구사항 (갤럭시북)
+
+# 핵심 패키지
+whisperlivekit>=0.2.17
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+websockets>=13.0
+python-multipart
+
+# 화자 인식 (Speaker Diarization)
+# NeMo Toolkit - Sortformer (SOTA 2025) 화자 인식 백엔드
+nemo_toolkit[asr]>=2.0.0
+
+# 오디오 처리
+numpy>=1.24.0
+scipy>=1.10.0
+soundfile>=0.12.0
+
+# 추가 의존성 (whisperlivekit 내부에서 사용)
+torch>=2.0.0
+torchaudio>=2.0.0
+transformers>=4.30.0

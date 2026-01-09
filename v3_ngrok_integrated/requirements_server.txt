@@ -1,0 +1,13 @@
+whisperlivekit
+fastapi
+uvicorn[standard]
+websockets
+python-multipart
+nemo_toolkit[asr]
+numpy
+scipy
+soundfile
+torch
+torchaudio
+transformers
+onnxruntime
