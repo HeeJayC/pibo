@@ -53,6 +53,15 @@ Thumbs.db
 temp/
 tmp/
 
+# Large models / backups
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# Uncomment when using Git LFS for large model files
+# *.onnx
+
 # Old versions (keep only in repo for history)
 *_v*.py
 galaxy_server_whisperlivekit.py

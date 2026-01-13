@@ -1,0 +1,39 @@
+TTS Model Setting : tts.json
+    텍스트로 톤 유도하는 방법이 있다고 함
+        줄바꿈 : 멈춤
+        느낌표나 쉼표
+        입니다아~ / ~여 패턴의 말버릇
+
+        위와 같은 말투를 커스터마이징하여 LLM 과정에서 전처리하는 것이 맞으려나?
+
+현재 코드 내용
+    코드 실행 시
+        input.txt 파일을 읽어옴
+        특정 길이로 문장 분할
+        문장 순서대로 TTS 음성 파일 생성
+        스레드 환경으로 병렬 처리
+
+    아직 미구현
+        중간 개입을 통한 실행 중단
+        
+
+FastAPI 사용해서 API로 실행하는 방식으로 변경
+    로봇에 코드 설치해서 돌리려고 하니, 라즈베리파이 버전이 너무 낮음
+    노트북 환경에서 TTS 파일 만들고 재생만 로봇이 하면 될듯
+
+FastAPI 서버 실행 방법
+    cd C:\Users\Heeja\PIBO_TTS\supertonic-2\MIRAE\laptop
+    uvicorn api:app --host 0.0.0.0 --port 8000
+
+    http://172.20.10.6:8000/docs
+        172.20.10.6 : 최희재 노트북 IP
+
+파이썬 파일 설명
+    laptop
+        run_tts.py : 노트북에서 TTS 파일 생성 (테스트용 파일)
+        api.py : FastAPI 서버 실행용
+        helper.py
+        tts_engine.py : TTS 엔진
+    raspberrypi
+        input.txt : TTS 파일 생성용 텍스트 파일 (LLM 답변이 저장되는 파일)
+        test_tts.py : 로봇에서 TTS 파일 재생
