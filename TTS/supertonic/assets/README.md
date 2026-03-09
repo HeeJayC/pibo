@@ -17,15 +17,15 @@ TTS/supertonic/assets/onnx
 최종적으로 폴더 구조는 아래와 같아야 합니다.
 
 TTS/
-└─ supertonic/
-└─ assets/
-└─ onnx/
-├─ tts.json
-├─ unicode_indexer.json
-├─ duration_predictor.onnx
-├─ text_encoder.onnx
-├─ vector_estimator.onnx
-└─ vocoder.onnx
+  └─ supertonic/
+    └─ assets/
+      └─ onnx/
+        ├─ tts.json
+        ├─ unicode_indexer.json
+        ├─ duration_predictor.onnx
+        ├─ text_encoder.onnx
+        ├─ vector_estimator.onnx
+        └─ vocoder.onnx
 
 
 해당 파일들이 올바르게 배치되면,  
