@@ -6,12 +6,6 @@ FastAPI 서버 실행 방법
 
 
 
-&nbsp;   http://172.20.10.6:8000/docs
-
-&nbsp;       172.20.10.6 : 최희재 노트북 IP
-
-
-
 파이썬 파일 설명
 
 &nbsp;   laptop
